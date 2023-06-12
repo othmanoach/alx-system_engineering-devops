@@ -1,0 +1,2 @@
+#!/bin/bash
+read -p "Enter a list of words: " words; echo "$words" | tr ' ' '\n' | sort | uniq -u
