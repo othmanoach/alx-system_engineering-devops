@@ -1,0 +1,1 @@
+first scripting in shell
