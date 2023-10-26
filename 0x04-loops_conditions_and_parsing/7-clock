@@ -8,9 +8,6 @@ while [ "$hour" -le 12 ]; do
   while [ "$minute" -le 59 ]; do
     echo "$minute"
     ((minute++))
-    if [ "$minute" -eq 10 ]; then
-      break
-    fi
   done
   ((hour++))
 done
