@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Start Apache so as to return a
 # page conatining Hello Holberton
+sudo apt install apache2
 service apache2 start
