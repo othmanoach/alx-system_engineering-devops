@@ -5,6 +5,7 @@ from requests import get
 from sys import argv
 
 
+# export function
 def cvsWrite(user):
     """writes to csv"""
     data = get('https://jsonplaceholder.typicode.com/todos?userId={}'.format(
