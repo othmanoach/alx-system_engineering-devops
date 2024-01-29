@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 # Script for exporting JSON data to CSV
+""" used moduls"""
 import csv
 from requests import get
 from sys import argv
