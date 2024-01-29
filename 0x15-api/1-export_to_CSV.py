@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# csv exported
+# Script for exporting JSON data to CSV
 import csv
 from requests import get
 from sys import argv
@@ -8,7 +8,17 @@ from sys import argv
 
 # export function
 def cvsWrite(user):
-    """writes to csv"""
+    """Fetches data from a JSON API and exports it to a CSV file.
+
+    Args:
+        user (int): The user ID for which data is to be fetched.
+
+    This function retrieves todo data for a specific user from a JSON API and writes it to a CSV file.
+    The data includes user-specific information and todo items.
+
+    Example:
+        cvsWrite(1)  # Fetches data for user ID 1 and exports it to a CSV file.
+    """
     data = get('https://jsonplaceholder.typicode.com/todos?userId={}'.format(
         user)).json()
     name = get('https://jsonplaceholder.typicode.com/users/{}'.format(
