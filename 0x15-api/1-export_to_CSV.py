@@ -14,7 +14,7 @@ def cvsWrite(user):
     Args:
         user (int): The user ID for which data is to be fetched.
 
-    This function retrieves todo data for a specific user from a JSON API and writes it to a CSV file.
+    function retrieve data for a specific user from a JSON API to a CSV file.
     The data includes user-specific information and todo items.
 
     Example:
